@@ -232,8 +232,7 @@ public class SAMLValidator {
                 if (!issuer.equals(assertedIssuer))
                     throw new SAMLException("Invalid Issuer");
                 if (!issuer.equals(samlIssuer))
-                    throw new SAMLException(
-                            "Error Issuer inválido" + assertedRecipient");
+                    throw new SAMLException("Error Issuer inválido" + assertedRecipient);
 
                 // check the recipient
                 XPathExpression subjectConfirmationDataXPath = xpath
