@@ -5,7 +5,7 @@ Cookie[] cookies = request.getCookies();
 if (cookies != null) {
  for (Cookie cookie : cookies) {
    if (cookie.getName().equals("IDENTITY")) {
-     identity = new Identity(cookie.getValue(),true);
+     identity = null; <!-- new Identity(cookie.getValue(),true);-->
     }
   }
 }
@@ -13,44 +13,49 @@ if (cookies != null) {
 %>
 
 <html>
+
 <head>
-<link href="/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
 
-<% if (identity != null ) { %>
-<center>
-<h2><%= identity.getSubject() %></h2>
-<table border="0" cellpadding="5">
-<%
+	<% if (identity != null ) { %>
+	<center>
+		<h2><%= identity.getSubject() %></h2>
+		<table border="0" cellpadding="5">
+			<%
 	Bag attributes = identity.getAttributes();
 	Set keySet = attributes.keySet();
 	Iterator iterator = keySet.iterator();
 	while (iterator.hasNext()){
 		String key = (String)iterator.next();
-		%><tr><td><b><%= key %>:</b></td><td><%
+		%><tr>
+				<td><b><%= key %>:</b></td>
+				<td><%
 		ArrayList<String> values = (ArrayList<String>)attributes.getValues(key);
 		for (String value : values) {
-			%><%= value %><br/><%
+			%><%= value %><br /><%
 		}
-		%></td></tr><%
+		%></td>
+			</tr><%
 
 	}
 
 %>
-</table>
-<br>
-<a href="/_saml?logout=true" class="button center">Logout</a>
-</center>
-<% } else {  %>
- <div class="centered">
- <span class=""><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
- </div>
+		</table>
+		<br>
+		<a href="/_saml?logout=true" class="button center">Logout</a>
+	</center>
+	<% } else {  %>
+	<div class="centered">
+		<span class=""><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
+	</div>
 
-<% } %>
+	<% } %>
 
 
 </body>
+
 </html>
