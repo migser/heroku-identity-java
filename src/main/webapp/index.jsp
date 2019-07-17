@@ -5,9 +5,9 @@ Cookie[] cookies = request.getCookies();
 if (cookies != null) {
  for (Cookie cookie : cookies) {
    if (cookie.getName().equals("IDENTITY")) {
-     identity = null; <!-- new Identity(cookie.getValue(),true);-->
-    }
-  }
+     identity = null; <%-- new Identity(cookie.getValue(),true);--%>
+}
+}
 }
 
 %>
