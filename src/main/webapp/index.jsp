@@ -18,8 +18,13 @@ if (cookies != null) {
 	<link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body
-	style="background-image: url('https://www.cervezaturia.es/sites/default/files/2018-12/home-header-ok.jpg'); background-position: center;   background-repeat: no-repeat;  background-size: cover; ">
+<body <div style="background-color: #000; position: relative;height: 100%;">
+	<video id="videoHome" loop="loop" autoplay="yes" preload="yes" muted="">
+		<source src="https://www.damm.com/themes/custom/dammc/components/asset-builds/videos/cervecera-home-hd.mp4"
+			type="video/mp4">
+		Su navegador no soporta la etiqueta de vídeo.
+	</video>
+	</div>
 	<center>
 		<img src="img/turia.svg" alt="Damm">
 	</center>
