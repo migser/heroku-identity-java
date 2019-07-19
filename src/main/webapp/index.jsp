@@ -26,7 +26,7 @@ if (cookies != null) {
 			Su navegador no soporta la etiqueta de vídeo.
 		</video>
 	</div>
-	<div style="position: fixed;left: 50%;transform: translateX(-50%);top:10%;">
+	<div style="position: fixed;left: 50%;transform: translateX(-50%);top:10%; bottom: 20px;">
 		<center>
 			<img src="img/turia.svg" alt="Damm">
 		</center>
