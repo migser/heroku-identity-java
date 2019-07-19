@@ -30,43 +30,43 @@ if (cookies != null) {
 		<center>
 			<img src="img/turia.svg" alt="Damm">
 		</center>
-	</div>
-	<div
-		style="position: fixed;left: 50%; top:10%; transform: translateX(-50%);background-color:rgba(255,255,255,.5);padding:20px">
 
-		<% if (identity != null ) { %>
-		<center>
-			<h2><%= identity.getSubject() %></h2>
-			<table border="0" cellpadding="5">
-				<%
+		<div style="background-color:rgba(255,255,255,.5);padding:20px">
+
+			<% if (identity != null ) { %>
+			<center>
+				<h2><%= identity.getSubject() %></h2>
+				<table border="0" cellpadding="5">
+					<%
 	Bag attributes = identity.getAttributes();
 	Set keySet = attributes.keySet();
 	Iterator iterator = keySet.iterator();
 	while (iterator.hasNext()){
 		String key = (String)iterator.next();
 		%><tr>
-					<td><b><%= key %>:</b></td>
-					<td><%
+						<td><b><%= key %>:</b></td>
+						<td><%
 		ArrayList<String> values = (ArrayList<String>)attributes.getValues(key);
 		for (String value : values) {
 			%><%= value %><br /><%
 		}
 		%></td>
-				</tr><%
+					</tr><%
 
 	}
 
 %>
-			</table>
-			<br>
-			<a href="/_saml?logout=true" class="button center">Logout</a>
-		</center>
-		<% } else {  %>
-		<div class="centered">
-			<span class=""><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
-		</div>
+				</table>
+				<br>
+				<a href="/_saml?logout=true" class="button center">Logout</a>
+			</center>
+			<% } else {  %>
+			<div class="centered">
+				<span class=""><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
+			</div>
 
-		<% } %>
+			<% } %>
+		</div>
 	</div>
 
 </body>
