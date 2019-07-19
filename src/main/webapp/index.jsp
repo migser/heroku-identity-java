@@ -28,7 +28,7 @@ if (cookies != null) {
 	</div>
 	<div style="position: fixed;left: 50%;transform: translateX(-50%);top:10%;">
 		<center>
-			<img src="img/damm-rojo.png" alt="Damm">
+			<img src="img/damm-rojo.png" alt="Estrella">
 		</center>
 
 		<div style="background-color:rgba(255,255,255,.5);padding:20px;margin-top:20px;">
