@@ -20,10 +20,10 @@ if (cookies != null) {
 
 <body
 	style="background-image: url('https://www.estrelladamm.com/sites/default/files/2016-09/welcome_0.jpg'); background-position: center;   background-repeat: no-repeat;  background-size: cover; ">
-	>
+
 	<div style="position: fixed;left: 50%;transform: translateX(-50%);top:10%;">
 		<center>
-			<img src="img/estrella.png" alt="Estrella">
+			<img height="20%" src="img/estrella.png" alt="Estrella">
 		</center>
 
 		<div style="background-color:rgba(255,255,255,.5);padding:20px;margin-top:20px;">
