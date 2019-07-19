@@ -21,7 +21,7 @@ if (cookies != null) {
 <body
 	style="background-image: url('https://www.cervezaturia.es/sites/default/files/2018-12/home-header-ok.jpg'); background-position: center;   background-repeat: no-repeat;  background-size: cover; ">
 	<center>
-		<img src="img/turia.svg" alt="Turia">
+		<img src="img/turia.svg" alt="Damm">
 	</center>
 
 
