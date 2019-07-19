@@ -53,9 +53,11 @@ if (cookies != null) {
 %>
 				</table>
 				<br>
-				<a href="/_saml?logout=true" class="button center">Logout</a>
-				<a href=<%="https://damm.zhopping.es/s/settings/"+attributes.get("userId")%> class="button center">Mis
+				<a href=<%="https://sdodemo-main-1535591f7ed.force.com/Turia/s/settings/"+attributes.get("userId")%>
+					class="button center">Mis
 					Datos</a>
+				<a href="/_saml?logout=true" class="button center">Logout</a>
+
 
 			</center>
 			<% } else {  %>
