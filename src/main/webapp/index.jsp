@@ -53,6 +53,8 @@ if (cookies != null) {
 %>
 				</table>
 				<br>
+				<a href=<%="https://damm.zhopping.es/s/settings/"+attributes.get("userId")%> class="button center">Mis
+					Datos</a>
 				<a href="/_saml?logout=true" class="button center">Logout</a>
 			</center>
 			<% } else {  %>
