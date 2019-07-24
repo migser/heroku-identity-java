@@ -65,7 +65,7 @@ if (cookies != null) {
 			<% } else {  %>
 			<center>
 				<div class="centered">
-					<span class=""><a href="/_saml?RelayState=%2F&expid=damm" class="button center">Login</a></span>
+					<span class=""><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
 				</div>
 			</center>
 

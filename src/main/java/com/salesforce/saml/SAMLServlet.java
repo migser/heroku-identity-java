@@ -157,6 +157,7 @@ public class SAMLServlet extends HttpServlet{
             System.out.println("ISSUER:" + ISSUER);
             System.out.println("IDP_URL:" + IDP_URL);
             System.out.println("IDP_PUBLIC_KEY:" + IDP_PUBLIC_KEY);
+            System.err.println("Hello, logs!");
             INITIALIZED = true;
 
         } else {
