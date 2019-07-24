@@ -207,7 +207,7 @@ public class SAMLServlet extends HttpServlet {
             // Pretty simply way to build a SAML Request. Beats building a DOM...
             String[] args = new String[5];
             args[0] = url;
-            args[1] = IDP_URL + "?expid=damm";
+            args[1] = IDP_URL + "/expid_damm";
             args[2] = UUID.randomUUID().toString();
             args[3] = new XSDDateTime().getDateTime();
             args[4] = url;
