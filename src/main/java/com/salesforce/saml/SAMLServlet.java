@@ -154,7 +154,7 @@ public class SAMLServlet extends HttpServlet {
                 IDP_URL = ssoNode.getAttributes().getNamedItem("Location").getTextContent();
                 if (IDP_URL == null)
                     throw new ServletException("No Location for SingleSignOnService with Redirect Binding");
-                IDP_URL= IDP_URL+ "/expid_damm"
+                IDP_URL = IDP_URL + "/expid_damm";
             } catch (XPathExpressionException e) {
                 throw new ServletException("Error Executing XPaths on Metadata", e);
             }
