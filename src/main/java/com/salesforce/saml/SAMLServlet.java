@@ -154,7 +154,7 @@ public class SAMLServlet extends HttpServlet {
                 IDP_URL = ssoNode.getAttributes().getNamedItem("Location").getTextContent();
                 if (IDP_URL == null)
                     throw new ServletException("No Location for SingleSignOnService with Redirect Binding");
-
+                IDP_URL= IDP_URL+ "/expid_damm"
             } catch (XPathExpressionException e) {
                 throw new ServletException("Error Executing XPaths on Metadata", e);
             }
@@ -207,7 +207,7 @@ public class SAMLServlet extends HttpServlet {
             // Pretty simply way to build a SAML Request. Beats building a DOM...
             String[] args = new String[5];
             args[0] = url;
-            args[1] = IDP_URL + "/expid_damm";
+            args[1] = IDP_URL;
             args[2] = UUID.randomUUID().toString();
             args[3] = new XSDDateTime().getDateTime();
             args[4] = url;
