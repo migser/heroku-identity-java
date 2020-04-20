@@ -20,11 +20,12 @@ if (cookies != null) {
 
 <body>
 	<div style="background-color: #000; position: fixed;height: 100%;">
-		<video id="videoHome" loop="loop" autoplay="yes" preload="yes" muted="">
+		<!--	<video id="videoHome" loop="loop" autoplay="yes" preload="yes" muted="">
 			<source src="https://www.damm.com/themes/custom/dammc/components/asset-builds/videos/cervecera-home-hd.mp4"
 				type="video/mp4">
 			Su navegador no soporta la etiqueta de vídeo.
 		</video>
+		-->
 	</div>
 	<div style="position: fixed;left: 50%;transform: translateX(-50%);top:10%;">
 		<center>
