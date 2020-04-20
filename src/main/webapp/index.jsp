@@ -19,19 +19,19 @@ if (cookies != null) {
 </head>
 
 <body>
-	<div style="background-color: #000; position: fixed;height: 100%;">
-		<!--	<video id="videoHome" loop="loop" autoplay="yes" preload="yes" muted="">
+	<!--<div style="background-color: rgb(120, 110, 110); position: fixed;height: 100%;">
+			<video id="videoHome" loop="loop" autoplay="yes" preload="yes" muted="">
 			<source src="https://www.damm.com/themes/custom/dammc/components/asset-builds/videos/cervecera-home-hd.mp4"
 				type="video/mp4">
 			Su navegador no soporta la etiqueta de vídeo.
 		</video>
-		-->
-	</div>
+		
+	</div> -->
 	<div style="position: fixed;left: 50%;transform: translateX(-50%);top:10%;">
-		<center>
+		<!-- <center>
 			<img src="img/damm-rojo.png" alt="Damm">
 		</center>
-
+	-->
 		<div style="background-color:rgba(255,255,255,.5);padding:20px;margin-top:20px;">
 
 			<% if (identity != null ) { %>
