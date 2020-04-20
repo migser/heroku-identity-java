@@ -17,15 +17,17 @@ if (cookies != null) {
 <head>
 	<link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
-
+<!--
 <body
 	style="background-image: url('https://www.estrelladamm.com/sites/default/files/2016-09/welcome_0.jpg'); background-position: center;   background-repeat: no-repeat;  background-size: cover; ">
+-->
 
+<body>
 	<div style="position: fixed;left: 50%;transform: translateX(-50%);top:10%;">
-		<center>
+		<!-- <center>
 			<img height="20%" src="img/estrella.png" alt="Estrella">
 		</center>
-
+	-->
 		<div style="background-color:rgba(255,255,255,.5);padding:20px;margin-top:20px;">
 
 			<% if (identity != null ) { %>
